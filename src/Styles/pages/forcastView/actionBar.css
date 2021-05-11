@@ -1,0 +1,45 @@
+.actionBar {
+	width: 130px;
+
+	display: flex;
+	justify-content: space-between;
+}
+.actionBar--action {
+	width: 50px;
+	height: 50px;
+	padding-top: 4px;
+	border: none;
+	border-radius: 50%;
+	color: var(--themeGreen);
+	background: var(--themeWhite);
+	box-shadow: var(--themeSectionsShadow);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.actionBar--action:hover {
+	filter: brightness(90%);
+}
+.actionBar--action:active {
+	box-shadow: none;
+}
+.action-active {
+	background: var(--themeWhite);
+}
+.action-disable,
+.action-disable svg {
+	filter: brightness(90%);
+	color: var(--themeGray);
+	box-shadow: none;
+}
+@media only screen and (max-width: 750px) {
+	.actionBar {
+		width: 120px;
+		margin-right: 20px;
+	}
+	.actionBar--action {
+		width: 40px;
+		height: 40px;
+	}
+}

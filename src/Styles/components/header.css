@@ -1,0 +1,32 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 20px;
+	height: var(--headerHeight);
+	background: var(--headerBg);
+	border-bottom: 3px solid var(--headerBorder);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header--header {
+	text-align: center;
+	color: var(--headerText);
+}
+.header--header > h1 {
+	font-size: 2rem;
+	color: var(--headerText);
+	border-bottom: 1px solid var(--themeGreen);
+}
+
+@media only screen and (max-width: 700px) {
+	.header {
+		justify-content: center;
+	}
+	.header--header {
+		display: none;
+	}
+}

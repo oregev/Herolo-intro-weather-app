@@ -1,0 +1,75 @@
+.daysForcast {
+	margin-bottom: 30px;
+	padding: 20px 10px;
+	border-radius: 5px;
+	background: var(--themeSectionsBg);
+	box-shadow: var(--themeSectionsShadow);
+}
+.daysForcast > h3 {
+	margin-bottom: 30px;
+	color: var(--theme);
+}
+.daysForcast > h3 > span {
+	display: inline-block;
+	margin: 0 10px;
+	font-weight: 200;
+	font-style: italic;
+}
+.daysForcast--days {
+	display: flex;
+	justify-content: space-around;
+}
+.daysForcast--day {
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border-radius: 5px;
+	background: var(--daysForcastBg);
+	box-shadow: 1px 1px 1px var(--themeShadow);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.daysForcast--day-temp {
+	font-weight: bold;
+	color: var(--daysTempText);
+}
+.daysForcast--day-day {
+	color: var(--daysDayText);
+}
+.daysForcast--icons {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-around;
+}
+.daysForcast--day img {
+	width: 40px;
+	height: auto;
+}
+.daysForcast--day:hover {
+	filter: brightness(90%);
+}
+
+@media only screen and (max-width: 750px) {
+	.daysForcast--days {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-items: center;
+	}
+	.daysForcast--day {
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.daysForcast--days {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+	}
+	.daysForcast--day {
+		margin-bottom: 20px;
+	}
+}

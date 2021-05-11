@@ -1,0 +1,71 @@
+.singleCity {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	padding: 0 0 14px 0;
+	border-radius: 5px;
+	background: var(--themeSectionsBg);
+	box-shadow: var(--themeSectionsShadow);
+}
+.singleCity:active {
+	box-shadow: none;
+}
+.singleCity--header {
+	width: 100%;
+	height: 30px;
+	border-radius: 5px 5px 0 0;
+	padding-left: 10px;
+	background: var(--singleCityHeaderBg);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.singleCity--header > p {
+	font-weight: bold;
+	color: var(--themeWhite);
+}
+.singleCity--header > span {
+	font-weight: bold;
+	color: var(--singleCityText);
+}
+.singleCity--body {
+	height: 88%;
+	padding: 10px 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.singleCity--body > p {
+	color: var(--singleCityText);
+}
+.singleCity--body > span {
+	color: var(--singleCityTemp);
+}
+.singleCity--closeButton {
+	width: 30px;
+	height: 100%;
+	padding-bottom: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 0 5px 0 0;
+
+	background: var(--themeYellow);
+	color: var(--singleCityCloseButtonText);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.singleCity--closeButton span {
+	transform: rotate(45deg);
+}
+.singleCity--closeButton:hover {
+	filter: brightness(90%);
+}
+.singleCity--closeButton:active {
+	filter: brightness(90%);
+	box-shadow: none;
+}

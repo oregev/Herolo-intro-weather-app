@@ -1,0 +1,84 @@
+.currentForcast {
+	margin-bottom: 30px;
+	padding: 20px 10px 10px 10px;
+	border-radius: 5px;
+	background: var(--themeSectionsBg);
+	box-shadow: var(--themeSectionsShadow);
+}
+.currentForcast--header {
+	margin-bottom: 20px;
+}
+.currentForcast--header > h3 {
+	padding-left: 10px;
+	margin-bottom: 20px;
+	color: var(--theme);
+}
+.currentForcast--header > h3 > span {
+	display: inline-block;
+	margin: 0 10px;
+	font-weight: 200;
+	font-style: italic;
+}
+.currentForcast--body {
+	display: flex;
+	justify-content: space-between;
+}
+.currentForcast--temp {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.currentForcast--temp > img {
+	width: 150px;
+	height: auto;
+	transform: translateY(-40px);
+}
+.currentForcast--temp > P {
+	transform: translate(-15px, 20px);
+	font-size: 3rem;
+	font-weight: 500;
+	color: var(--themeGreen);
+}
+.currentForcast--details {
+	margin-left: 20px;
+}
+.currentForcast--details p {
+	font-weight: 300;
+	margin-bottom: 10px;
+	color: var(--forcastPText);
+}
+.currentForcast--details span {
+	font-weight: 500;
+	color: var(--theme);
+}
+.currentForcast--footer {
+	padding-right: 10px;
+	height: 25px;
+	text-align: right;
+}
+.currentForcast--footer svg {
+	width: 20px;
+	color: var(--theme);
+}
+
+@media only screen and (max-width: 750px) {
+	.currentForcast--body {
+		flex-direction: column;
+	}
+	.currentForcast--temp {
+		margin-top: 20px;
+		padding: 0px 20px;
+		height: 50px;
+		width: 100%;
+	}
+	.currentForcast--temp > img {
+		width: 100px;
+		height: auto;
+		transform: translateY(-40px);
+	}
+	.currentForcast--temp > P {
+		font-size: 2.2rem;
+		transform: translate(0);
+	}
+}

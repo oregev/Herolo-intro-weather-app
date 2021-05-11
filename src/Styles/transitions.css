@@ -1,0 +1,14 @@
+.favoriteEffect-enter {
+	opacity: 0.01;
+}
+.favoriteEffect-enter-active {
+	opacity: 1;
+	transition: opacity 300ms;
+}
+.favoriteEffect-exit {
+	opacity: 1;
+}
+.favoriteEffect-exit-active {
+	opacity: 0.01;
+	transition: opacity 300ms;
+}

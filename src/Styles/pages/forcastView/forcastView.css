@@ -1,0 +1,35 @@
+.forcastView {
+	width: 100%;
+	max-width: 1000px;
+	height: 100%;
+	padding: 20px var(--sectionOffset) 20px 20px;
+	border: none;
+	border-radius: 5px;
+	background: var(--forcastViewBg);
+	box-shadow: 1px 1px 3px var(--themeShadow);
+}
+.forcastView--header {
+	margin-bottom: 30px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.forcastView--title > h2 {
+	width: 200px;
+	align-items: center;
+	color: var(--themeGreen);
+
+	display: flex;
+}
+@media only screen and (max-width: 750px) {
+	.forcastView--title > h2 {
+		font-size: 1.5rem;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.forcastView--title > h2 {
+		font-size: 1.2rem;
+		width: fit-content;
+	}
+}

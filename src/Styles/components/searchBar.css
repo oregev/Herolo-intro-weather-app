@@ -1,0 +1,84 @@
+.searchBar {
+	position: relative;
+	max-width: 1000px;
+	margin-bottom: 40px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background: var(--searchBarBg);
+	box-shadow: 1px 1px 3px var(--themeShadow);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.searchBar--search {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+}
+.searchBar--search > input,
+.searchBar--search > button {
+	height: 35px;
+	border-radius: 5px;
+}
+.searchBar--search > input {
+	width: 350px;
+	margin-right: 20px;
+	padding: 0 5px;
+	font-size: 1rem;
+	border: 1px solid var(--searchInputBorder);
+}
+.searchBar--search > input:hover {
+	filter: brightness(98%);
+}
+.searchBar--search > button {
+	width: 150px;
+	font-size: 1rem;
+	font-weight: bold;
+	border: none;
+	color: var(--searchButtonText);
+	background: var(--searchButtonBg);
+	box-shadow: 1px 1px 2px var(--themeShadow);
+}
+.searchBar--search > button:hover {
+	filter: brightness(90%);
+}
+.searchBar--search > button:active {
+	box-shadow: none;
+}
+.searchOptions {
+	position: absolute;
+	overflow-y: scroll;
+	top: 50px;
+	height: 250px;
+	padding: 5px 0px;
+	border: 1px solid var(--searchOptionsBg);
+	border-radius: 5px;
+	color: var(--themeWhite);
+	background: var(--searchOptionsBg);
+}
+.searchBarOption {
+	padding: 10px 15px;
+	border-bottom: 1px solid var(--searchOptionBorder);
+}
+.searchBarOption:hover {
+	background: var(--searchOptionHover);
+}
+
+@media only screen and (max-width: 700px) {
+	.searchBar--search {
+		flex-direction: column;
+		align-items: center;
+	}
+	.searchBar--search > input {
+		margin: 0;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.searchBar {
+		padding: 10px;
+	}
+}
